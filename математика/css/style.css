@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+}
+:root{
+    --w: calc(1vw + 1vh);
+}
+@font-face {
+    font-family: Arsenal;
+    src: url(../fonts/arsenal-regular.woff2);
+}
+@font-face {
+    font-family: Intro;
+    src: url(../fonts/Intro.otf);
+}
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: url(../img/fon.jpg);
+    overflow: scroll;
+}
+/*Регистрация*/
+.button{
+background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-family: Arial;
+}
+.menuvvod{
+    width: 250px;
+    height: 25px;
+ font-family: Arsenal;
+    background-color: #fafafa;
+  border:0;
+  box-shadow:0 0 4px rgba(0,0,0,0.3);
+  transition: .3s box-shadow;
+  position: static;
+}
+/* Заголовок / Название Блога */
+.header {
+    padding: 40px;
+    text-align: center;
+    background: url(../img/1.jpg);
+    font-family: Intro;
+    font-size: 42px;
+}
+.dsp{
+    font-family: Intro;
+    font-size: 42px;
+}
+
+/* Стиль верхней панели навигации */
+.topnav {
+    font-family: Intro;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Стиль верхних навигационных ссылок */
+.topnav a {
+    font-family: Arial;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Изменение цвета при наведении */
+.topnav a:hover {
+    font-family: Arial;
+    background-color: #ddd;
+    color: black;
+}
+.active{
+    font-family: Arial;
+	background-color: #ddd;
+	color: black;
+	text-decoration-color: black;
+}
+.passive{
+    font-family: Arial;
+ color: white;
+}
+.sslka{
+    text-decoration: none;
+    color: black;
+}
+
+/* Создайте две неравные колонки, которые плавают рядом друг с другом */
+/* Левая колонка */
+.leftcolumn {   
+    font-family: Arial;
+    float: left;
+    width: 75%;
+}
+
+/* Правая колонка */
+.rightcolumn {
+    font-family: Arial;
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Поддельные изображения */
+.fakeimg {
+    font-family: Arial;
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+.iimg{
+    font-family: Arial;
+    width: 299px;
+    height: 200px;
+    padding: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+/* Добавление эффекта карточки для статей */
+.card {
+    font-family: Arial;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Очистить поплавки после колонн */
+.row:after {
+    font-family: Arial;
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Курсы*/
+.product-item {
+    width: calc(var(--w) * 13) ;
+    border: 1px solid #eee;
+    background: white;
+    font-family: "Open Sans";
+    transition: .4s linear;
+    display: inline-block;
+    margin-left: calc(var(--w) * 0.7) ;
+    margin-top: calc(var(--w) * 0.7) ;
+    border-radius: 5px;
+  }
+  .product-img {
+    transition: 1s ease-in-out;
+  }
+  .product-img:hover {
+    transform: scale(1.1);
+  }
+  .product-img img {
+    max-height: calc(var(--w) * 16);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+  .product-list {
+    padding-top: calc(var(--w) ) ;
+  }
+  .actions {
+    text-align: center;
+    background-color: purple;
+    padding-top: 4px;
+    font-size: calc(var(--w) ) * 0.9;
+    height: 30px;
+    line-height: 30px;
+    transition: .4s linear;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .actions:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .actions:hover{
+    background-color: burlywood;
+  }
+  .cart-button {
+    text-decoration: none;
+    color: white;
+  }
+  .diiiv {
+    text-align: left;
+    height: calc(var(--w) * 4);
+    padding-left: calc(var(--w) * 0.3) ;
+    padding-right: calc(var(--w)  * 0.1);
+    font-size: calc((var(--w) ) * 0.7);
+    padding-bottom:calc(var(--w)) ;
+  }
+  .date_w{
+    padding-left: calc(var(--w) * 0.1) ;
+    padding-right: calc(var(--w)  * 0.6);
+    font-size: calc((var(--w) ) * 0.6);
+    padding-bottom:calc(var(--w) * 0.7) ;
+  }
+  .date_w::before {
+    padding-right: 5px;
+    content: "📆";
+  }
+
+/* Нижний колонтитул */
+p{
+    font-family: Arsenal;
+	color: black;
+}
+footer{
+    font-family: Arial;
+    position: relative;/*относительное позиционирование*/
+    width: 100%;/*на всю ширину*/
+    padding: 20px 50px;/*поля для контента*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+	background: url(../img/foot.png);/*картинка*/
+    flex-direction: column;
+}
+footer .wave{
+    font-family: Arial;
+    position: absolute;/*абсолютное позиционирование*/
+    left: 0;
+}
+.social,
+.menu{
+    font-family: Arial;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social li,
+.menu li{
+    font-family: Arial;
+    list-style: none;/*удалить черные маркеры*/
+}
+.social li a {
+    font-family: Arial;
+    font-size: 2em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+}
+.menu li a {
+    font-family: Arial;
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: black;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+.menu li a:hover {
+    font-family: Arial;
+    opacity: 1;
+}
+footer p {
+    font-family: Arial;
+	color: black;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+    padding: 20px;
+}  
+
+/* Отзывчивый макет  -когда экран меньше, чем 800px широкий, сделать два столбца стека друг на друга, а не рядом друг с другом */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Отзывчивый макет - когда экран меньше, чем 400px широкий, сделать навигационные ссылки стек поверх друг друга, а не рядом друг с другом */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 320px){
+.iimg{
+    display: none;
+}    
+}
+/*Видео ютуб*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.video-container {
+    flex-basis: calc(100% / 3);
+    background: #999;
+    padding: 20px;
+}
+.youtube-video {
+    padding: 56.25% 0 0 0;
+    position: relative;
+}
+
+@media (max-width: 960px) {
+    .container {
+        justify-content: flex-start;
+    }
+    .video-container {
+        flex-basis: calc(100% / 2);
+    }
+}
+@media (max-width: 740px) {
+    .video-container {
+        flex-basis: 100%;
+    }
+}
